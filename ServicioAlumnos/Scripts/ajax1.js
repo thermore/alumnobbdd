@@ -1,4 +1,4 @@
-﻿var url = "http://localhost:49366/api/";
+﻿var url = "http://localhost:50260/api/";
 
 var borrarTabla = function() {
 
@@ -49,7 +49,7 @@ var cargarTabla = function(datos) {
 };
 
 var leerDatos = function() {
-    var urlFinal = url + "alumnos";
+    var urlFinal = url + "alulmnos";
 
     var ajax = new XMLHttpRequest();
     ajax.open("GET", urlFinal);
@@ -74,7 +74,7 @@ var leerDatos = function() {
 
 var modificar= function(evt) {
     var idelemento = evt.target.getAttribute("id");
-    var urlFinal = url + "alumnos/" + idelemento.split("-")[1];
+    var urlFinal = url + "alulmnos/" + idelemento.split("-")[1];
 
     var ajax = new XMLHttpRequest();
     ajax.open("GET", urlFinal);
@@ -103,7 +103,7 @@ var modificar= function(evt) {
 
 
 var escribirDatos = function() {
-    var urlFinal = url + "alumnos";
+    var urlFinal = url + "alulmnos";
 
     var ajax = new XMLHttpRequest();
     var id = document.getElementById("hdnId").value;
@@ -147,7 +147,7 @@ var escribirDatos = function() {
 };
 var borrar = function(evt) {
     var idelemento = evt.target.getAttribute("id");
-    var urlFinal = url + "alumnos/"+idelemento.split("-")[1];
+    var urlFinal = url + "alulmnos/"+idelemento.split("-")[1];
 
     var ajax = new XMLHttpRequest();
     ajax.open("DELETE", urlFinal);
